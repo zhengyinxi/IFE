@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>IFE lesson id 19</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta name="description" content="i-Shanghai"/>
+    <!--<link rel="shortcut icon" href="/static/img/favicon.ico"/>-->
+    <style>
+        html, body, .parent {
+            height: 100%;
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .middle {
+            flex: 1;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="parent">
+    <div id="hugeCanvas" class="middle">
+
+    </div>
+    <script src="./dep/jquery-3.1.1.min.js"></script>
+<script src="./src/canvasContainer.js"></script>
+<script>
+    new CanvasContainer("hugeCanvas", {
+        image:{
+            src:"./102400_67800.jpg",
+            left:   0,
+            top:    0,
+            right:  102400,
+            bottom: 67800
+        },
+        thumbnail:{
+            width:"100px",
+            height:"50px",
+            alwaysShowAll:true
+        }
+    });
+</script>
+</body>
+</html>
